@@ -1,0 +1,330 @@
+
+<!DOCTYPE HTML>
+<!--
+   Welcome! Thanks for looking at my code  :)
+   If you have any questions contact me at info@ondrejhomola.com
+   http://www.ondrejhomola.com
+   -->
+<html>
+   <head>
+      <title>CAR DASHBOARDvolution - Experience interactive history of car dashboard</title>
+      <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="description" content="Take a quick journey into history of Porsche while listening the decade versions of a song Get Lucky. UX project made by Ondrej Homola. " />
+      <meta name="author" content="Ondrej Homola - www.ondrejhomola.com">
+      <link href="images/myicon.ico" rel="shortcut icon" />
+      <link rel="stylesheet" type="text/css" href="css/reset-min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css" />
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
+
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="fb:admins" content="1594344136" />
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/tgs-player.js"></script>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+   </head>
+
+
+   <body class="noscroll">
+
+      <div id="topbar">
+         <a href="#" title="PORSCHEvolution by Ondrej Homola">
+            <div id="logo" class="wrapper">
+               <div class="new-logo"><span>CAR DASHBOARD</span> volution</div>
+            </div>
+         </a>
+      </div>
+
+
+      <ul class="navigation">
+         <li data-slide="0" style="display:none"></li>
+         <li data-slide="1">1908</li>
+         <li data-slide="2">1938</li>
+         <li data-slide="3">1955</li>
+         <li data-slide="4">Research</li>
+         <li data-slide="5">1974</li>
+         <li data-slide="6">1976</li>
+         <li data-slide="7">1982</li>
+         <li data-slide="8">Morden</li>
+         <li data-slide="9">Future</li>
+
+         <li data-slide="12" class="noborder"></li>
+      </ul>
+
+
+      <!-- <div id="mute">
+         <div></div>
+          <span class="tooltiptext"><div class="arrow-left"></div>Turning off music kills a half of the experience ;)</span>
+      </div> -->
+
+
+      <div class="slide" id="slide0" data-slide="0"  >
+         <div class="wrapper">
+            <div class="new-logo"><span>CAR DASHBOARD</span> volution</div>
+            <span class="volume">Turn up the volume to enjoy full experience</span>
+
+            <div class="landingpage-interaction">
+                   <a class="button0 disabled" data-slide="1" title="START EXPERIENCE">
+                     <input id="round" class="disabled" type="submit" value="LOADING ..." />
+                  </a>
+               </div>
+
+            <audio id="start" class="active">
+               <source src="sounds/start.ogg" type="audio/ogg">
+               <source src="sounds/start.mp3" type="audio/mpeg">
+            </audio>
+         </div>
+      </div>
+
+
+      <!-- 福特T型车 -->
+      <section class="slide" id="slide1" data-slide="1">
+         <!-- <div class="wrapper"> -->
+            <div class="year">
+               <div class="year-inner dark">1908</div>
+               <hr class="dark-line">
+               <div class="year-desc dark">
+                 <span>Ford Model T:</span>
+                  The top speed of its was only about 56km/h. It therefore did not have a speedometer as standard. There was only a switch lever and an ammeter on the dashboard.
+               </div>
+            </div>
+         <a class="button" data-slide="2" title=""></a>
+      </section>
+
+
+      <!-- 大众甲壳虫 -->
+      <section class="slide" id="slide2" data-slide="2"  >
+         <div class="year">
+            <div class="year-inner dark">1938</div>
+            <hr class="dark-line">
+            <div class="year-desc dark">
+               The car dashboard of the 1930s continued this simple style.
+             </div>
+               <div class="year-desc dark">
+               <span>Volkswagen beetle:</span>
+              There are only two components on the dashboard, a speedometer and a clock. The remaining space on both side of the dashboard was used as a glove compartment.
+            </div>
+         </div>
+
+         <a class="button" data-slide="3" title=""></a>
+      </section>
+
+
+      <!-- 帝国汽车 -->
+      <section class="slide" id="slide3" data-slide="3" >
+         <div class="year">
+            <div class="year-inner">1955</div>
+            <hr>
+            <div class="year-desc">
+               <span>Hrysler Imperial:</span>
+               The generation after World War II was deeply influenced by the romanticism of the bomber cockpit. Complex knobs, levers and a large number of instruments became fashionable at the time.
+            </div>
+         </div>
+
+         <a class="button" data-slide="4" title=""></a>
+      </section>
+
+
+      <!-- 空军研究结果 -->
+      <section class="slide" id="slide4" data-slide="4" >
+        <div class="year" >
+          <div class="year-desc dark" style="margin-top:30px">
+            However, although the complicated instrument panel had a unique aesthetic, it sacrificed the driver's accessibility to read information and make operations. In 1947, <a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a800143.pdf">the U.S. Air Force studied 270 cases</a> of misreading and touching by pilots. It was found that the existing instrument panel design could cause serious psychological or physical interference to pilots. The conclusion of the study was that the possibility of such accidents could be eliminated or reduced through proper dashboard design, which inspired car manufacturers. After the 1970s, all functions were no longer displayed like a grocery store. It began to pay more attention to the relationship between people and cars, trying to complete the specified operation with the smallest hand movement range.
+          </div>
+          <lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_t8zh4zeb.json" style="margin-top: 50px;width: 100%">"></lottie-player>
+        </div>
+
+        <script>
+            LottieInteractivity.create({
+                mode:"scroll",
+                player:'#firstLottie',
+                actions: [
+                    {
+                        visibility:[0,1],
+                        type: "seek",
+                        frames: [0, 100],
+                    },
+                ]
+            });
+        </script>
+
+         <a class="button" data-slide="5" title=""></a>
+      </section>
+
+
+      <!-- 雪铁龙 -->
+      <section class="slide" id="slide5" data-slide="5" >
+         <div class="year">
+            <div class="year-inner">1974</div>
+            <hr>
+            <div class="year-desc">
+               <span>Citroen CX:</span>
+               Lamplight and windshield wipers were placed on both sides of the steering wheel, so that they could be controlled without removing hands from the steering wheel. The instrument panel concentrated warning lights on a line in front of the driver's license. A horizontally rotating roller was also used to display the speedometer and tachometer, and the characters were larger than before. However, it was a confusing and hard understanding design.
+         </div>
+
+         <a class="button" data-slide="6" title=""></a>
+      </section>
+
+
+      <!-- 阿斯顿马丁 -->
+      <section class="slide" id="slide6" data-slide="6" >
+         <div class="year">
+            <div class="year-inner dark">1976</div>
+            <hr class="dark-line">
+            <div class="year-desc dark">
+               <span>Aston Martin Lagonda:</span>
+               The first production car to use an electronic dashboard, looked simple and modern. The numbers on the electronic digital dial continuously jumped and changed while driving. However, the characters 0, 6, 8, 9 were very similar, making the digital dial more difficult to see, and the driver had become accustomed to the traditional speedometer. So it soon returned to analog pointer type dashboard again.
+            </div>
+         </div>
+
+         <a class="button" data-slide="7" title=""></a>
+      </section>
+
+
+      <!-- 蓝旗亚 -->
+      <section class="slide" id="slide7" data-slide="7" >
+         <div class="year">
+            <div class="year-inner">1982</div>
+            <hr>
+            <div class="year-desc">
+               <span>Lancia Orca:</span>
+               Once again explored the digital instrument panel and keyboard operation, and finally only stayed in the concept car.
+            </div>
+         </div>
+
+         <a class="button" data-slide="8" title=""></a>
+      </section>
+
+
+      <!-- 安全气囊 -->
+      <section class="slide" id="slide8" data-slide="8" style="height:100%">
+         <div class="year">
+            <!-- <div class="year-inner dark">1990<span>s</span></div> -->
+            <!-- <hr> -->
+            <div class="year-desc dark">
+               Since the 1990s, major automobile manufacturers and governments of various countries gradually realized the importance of airbags, which were later required by legislation to be equipped in cars.  Steering wheels that were once designed with all sorts of weirdness have also tended to be unified in order to accommodate airbags, gradually forming the layout of the car dashboard that we are familiar with today.
+            </div>
+            <lottie-player id="secondLottie" src="https://assets10.lottiefiles.com/packages/lf20_dc4k8ipy.json" style="height:100%">"></lottie-player>
+            <div class="year-desc dark">
+                The speedometer is in the most conspicuous place, as it is the most commonly used when driving. Other elements such as cooler temperature gauges and fuel gauges that need less attention during driving occupy a small area beside the speedometer. The controllers related to driving, such as wiper switch, steering switch, etc. are arranged on both sides of the steering wheel, where it is convenient to operate by turning or flipping the control lever. The mechanical control switch can give the driver timely and accurate feedback, normally without driver’s double confirmation, making driving much more safer.
+            </div>
+          </div>
+
+          <script>
+              LottieInteractivity.create({
+                  mode:"scroll",
+                  player:'#secondLottie',
+                  actions: [
+                      {
+                          visibility:[0,1],
+                          type: "seek",
+                          frames: [0, 100],
+                      },
+                  ]
+              });
+          </script>
+
+         <a class="button" data-slide="9" title=""></a>
+
+      </section>
+
+
+
+      <section class="slide" id="slide9" data-slide="9" >
+         <div class="year">
+            <div class="year-desc">
+              In recent years, there has also been a trend of further simplification of automobile dashboards, especially in some electric vehicles. A large touch screen in the center takes on the task of displaying all the information of the car. The adjustment of air conditioner, wiper, car light, etc. can also be realized by touch. The simplified central control system allows the driver to pay more attention to the road conditions. However, it makes a lot of drivers, who to the traditional modern dashboard, need to adapt.
+            </div>
+            <lottie-player id="thirdLottie" src="https://assets4.lottiefiles.com/packages/lf20_azl7jybk.json" style="height:100%">"></lottie-player>
+            <div class="year-desc">
+              Advanced technologies, such as artificial intelligence, AR technology, also has the potential to be put into the car driving interaction system. Therefore, in the future, there are likely to be many changes in the interaction system of the car.
+            </div>
+         </div>
+         <a class="button" data-slide="10" title=""></a>
+
+         <script>
+             LottieInteractivity.create({
+                 mode:"scroll",
+                 player:'#thirdLottie',
+                 actions: [
+                     {
+                         visibility:[0,1],
+                         type: "seek",
+                         frames: [0, 100],
+                     },
+                 ]
+             });
+         </script>
+          <a class="button" data-slide="12" title=""></a>
+
+      </section>
+
+
+
+      <section class="slide" id="slide12" data-slide="12" >
+         <div id="about1">
+            <div class="wrapper">
+               <div class="about-text">
+                  This web page is about the research on the evolution of car dashboard from the perspective of user experience design.
+               </div>
+               <div class="about-text">
+                  Although the designers have gone through a detour in the development process, the dashboard has finally realized providing safe and comfortable driving environment and simple and effective driving operations for drivers.
+               </duv>
+               <div class="about-text">
+                  With the continuous innovation of the car, the interaction system on the car will inevitable be further innovated. The future will also be a challenge.
+               </div>
+               <div class="about-text">
+                 <p>Tools</p>
+                   <p style="padding:0; font-size:15px; color:#555555;">Photoshop, Illustrator, After Effect, Bodymovin Plugins</p>
+                <p>Bibliography</p>
+                  <p style="padding:0; font-size:15px; color:#555555;"><i>Ergonomics in the Automotive Design Process</i>, by Vivek D. Bhise</p>
+                  <a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a800143.pdf">1947, U.S. Air Force study</a><br>
+               <P>Resources</p>
+                 <a href="https://stock.adobe.com/uk/images/classic-convertible-interior/209099592">Login Background Image</a><br>
+                 <a href="https://www.britannica.com/technology/Model-T">1908 Ford Model T Image</a><br>
+                 <a href="https://www.pinterest.co.uk/pin/443675000760563500/">1938 Volkswagen beetle Image</span></a><br>
+                 <a href="https://engineswapdepot.com/?p=10575">1955 Hrysler Imperial Image</a><br>
+                 <a href="https://www.pocketoz.com.au/afe/motoring-citroen-cx.html">1974 Citroen CX Image</a><br>
+                 <a href="https://www.pinterest.co.uk/pin/442056519655765855/">1976 Aston Martin Lagonda Image</a><br>
+                 <a href="https://www.carstyling.ru/en/car/1982_lancia_orca/images/4264/">1982 Lancia Orca Image</a><br>
+              <p>Thanks to</p>
+                <a href="http://www.ondrejhomola.com/portfolio/porschevolution">Web Template Case Study</a><br>
+                <a style="text-decoration:none">Lottie Animation on Scroll: </a><a href="https://github.com/LottieFiles/lottie-player">Github, </a><a href="https://lottiefiles.com/">Lottiefiles</a><br>
+            </div>
+            </div>
+         </div>
+<!--
+         <div id="about2">
+            <div class="wrapper">
+
+            </div>
+         </div>
+      </section> -->
+
+
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+      <script src="js/jpreloader.min.js"></script>
+       <script type="text/javascript">
+         $(document).ready(function() {
+            $('body').jpreLoader();
+         });
+      </script>
+      <script type="text/javascript" src="js/mobile.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/evolution.js"></script>
+      <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+      <script type="text/javascript" src="js/waypoints.min.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/lottie.js"></script>
+      <script type="text/javascript" src="js/animate_index.js"></script>
+
+
+   </body>
+</html>
